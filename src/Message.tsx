@@ -1,6 +1,7 @@
-// To create a react component, you can use a JavaScript class or a function
-// I'm using a function-based component
+// To create a react component, you can use either a JavaScript class or a function.
+// We will be making function-based components.
 
+// This component's job is to show a greeting. (A component can also have behavior).
 function Message() {
     // This syntax is JSX: JavaScript XML (appears to be HTML code inside JavaScript)
     const name = 'Mia'
@@ -10,7 +11,8 @@ function Message() {
     // If name is true (a string), return Hello name, else Hello World
 }
 
-// Package react-dom (seen in package.json) updates the virtual dom when we change something in the actual dom
-// dom is the memory system of the App and the Message
+// Dom is the actual webpage. Virtual Dom is React's "draft" of the webpage.
+// Package react-dom (seen in package.json) updates the virtual dom fast by only changing what's necessary.
+// No need to manage it, React does it automatically.
 
 export default Message;

@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import 'bootstrap/dist/css/bootstrap.css'
 
+// main.tsx takes our React App and mounts it in the webpage browser.
+
 // This means ReactDOM is displaying this component tree inside an element with the ID of root
 // We could also use the library React Native instead of library React Dom
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
@@ -11,11 +13,11 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   </React.StrictMode>,
 )
 
-// A library provides specific functions
-// A framework is a set of tools and guidelines for building apps
+// A library provides specific functions.
+// A framework is a set of tools and guidelines for building apps (eg React).
 
 /* React is a library for building UIs (user interfaces)
 We need additional third-party libraries for:
-Routing (allows user to go from one page to another),
-making HTTP calls, managing app state, internationalization, form validation, animations.
+Routing (allows user to go from one page to another), making HTTP calls,
+managing app state, internationalization, form validation, animations, etc.
 */
