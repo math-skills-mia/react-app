@@ -2,9 +2,9 @@
 
 Mia Striebeck
 
-## Creating a New App with Vite
+## Create a New App with Vite
 
-1. **Open Terminal**: Use system terminal or VSCode's terminal (`Ctrl + \``).
+1. **Open Terminal**: Use system terminal or VSCode's terminal (`` Ctrl + `  ``).
 2. **Create Project**: Vite starts a web server. Run `npm create vite@latest`. I'm using `create vite@4.1.0`.
 3. **Follow Prompts**:
 
@@ -14,18 +14,33 @@ Mia Striebeck
 
 4. **Navigate to Project Folder**: `cd react-app`.
 5. **Install all third-party libraries**: `npm i`.
-6. **Open in VSCode**: `code .` or drag folder into VSCode.
-7. **Open VSCode's Terminal**: Ctrl + ` or click Terminal in the Menu Bar.
+6. **Open in VSCode** (if not open already): `code .` or drag folder into VSCode.
+7. **Open VSCode's Terminal** (if not open already): `` Ctrl + `  `` or click Terminal in the Menu Bar.
 8. **Start Web Server**: `npm run dev`.
 9. **Open Web Server in Browser**: Copy the localhost address (eg `https://localhost:XXXX/`) and paste it in your browser.
 
 ---
 
-## How to View Your App
+## Two-Terminal Setup
 
-Whenever you need to open the webpage,\
-**Always**: run `npm run dev`, and then copy the localhost address into a browser.\
-**Never**: Use VSCode Live Server through `index.html` directly.
+Use 2 separate terminals - one for the running web server, the other for the commands to create the app.
+
+### Terminal 1 - Server:
+
+After running `npm run dev`, leave this terminal open.
+
+- Shows live updates and errors.
+- Don't type other commands here.
+
+### Terminal 2 - Commands:
+
+This terminal will be used for our commands.
+
+- **Open Second Terminal**: Click the `+` icon in the top right corner of the internal terminal pane.
+- **Navigate to your app**: `cd react-app`.
+- Run your commands here to begin building your app!
+
+---
 
 ## Summary of Key Files
 
@@ -96,9 +111,9 @@ return (
 ```
 
 1. Select Code: Highlight the elements.
-2. Bring up the **Command Palette**: Shift + Cmd + P or click View in the menu bar.
+2. Open the Command Palette: `Shift + Cmd + P` or click `View` in the menu bar.
 3. 'Wrap with Abbreviation' and enter.
-4. Type div and enter.
+4. Type `div` and enter.
 
 _Drawback_: Adds extra `<div>` to the DOM.
 
@@ -117,9 +132,9 @@ return (
 
 1. `import { Fragment } from "react";`.
 2. Select Code: Highlight the elements.
-3. Bring up the **Command Palette**. Shift + Cmd + P.
+3. Open the Command Palette. `Shift + Cmd + P`.
 4. `Wrap with Abbreviation` and enter.
-5. Type Fragment and enter.
+5. Type `Fragment` and enter.
 
 _Advantage_: No extra DOM element.
 
@@ -142,6 +157,6 @@ _Advantages_: No need to import Fragment. No extra DOM element. Cleaner code.
 
 ## VS Code Shortcuts
 
-1. `Ctrl + \``: Open internal terminal.
+1. `` Ctrl + `  ``: Open internal terminal.
 2. `Cmd + P`: File Search.
 3. `Cmd + D`: Add multiple cursors to matching texts.
