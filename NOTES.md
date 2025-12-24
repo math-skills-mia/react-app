@@ -5,7 +5,7 @@ Mia Striebeck
 ## Creating a New App with Vite
 
 1. **Open Terminal**: Use system terminal or VSCode's terminal (`Ctrl + \``).
-2. **Create Project**: Vite starts a web server. Run `npm create vite@latest`.
+2. **Create Project**: Vite starts a web server. Run `npm create vite@latest`. I'm using `create vite@4.1.0`.
 3. **Follow Prompts**:
 
 - Type project name (eg `react-app`).
