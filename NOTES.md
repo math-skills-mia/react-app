@@ -75,7 +75,7 @@ This terminal will be used for our commands.
 1. **Install Bootstrap**: Bootstrap is a popular CSS library with a bunch of CSS classes for styling our app. Run `npm install bootstrap`.
 2. **Clear `App.css`**: `App.css` contains Vite's inbuilt styles for our app components. We will not be needing them. Clear all the code in `App.css`.
 3. **Delete `index.css`**: `index.css` has all the global styles for our app. Delete the `index.css` file.
-4. **Update `main.tsx`**: In `main.tsx`, replace `import './index.css'` with `import bootstrap/dist/css/bootstrap.css`.
+4. **Update `main.tsx`**: In `main.tsx`, replace `import './index.css'` with `import 'bootstrap/dist/css/bootstrap.css'`.
 5. **Check your webpage to see your app with new font and formatting!**
 
 ---
