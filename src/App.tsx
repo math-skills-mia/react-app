@@ -1,4 +1,4 @@
-import Message from './Message'
+import Message from './components/Message'
 
 // App.tsx contains all the components.
 // It currently only has one component: the Message component.

@@ -61,10 +61,11 @@ This terminal will be used for our commands.
 
 ### Example: Message Component
 
-1. **Create File**: Add file to `src` called `Message.tsx`. This component will display a message on our webpage.
-2. **Write Component**: Create the function. Export the function as a default object to be used in other modules.
-3. **Use in App (App.tsx).** Clear all the code in `App.tsx`. Import your message function component. Display the message using a function. Export.
-4. **Check your webpage to see your app!** If you don't have it open already, run `npm run dev` and copy the localhost address in a browser.
+1. **Create Folder**: It's convention to have all our components in a dedicated folder called `components`. Add folder `components` within the `src` folder.
+2. **Create File**: Let's create our first component file called `Message.tsx`! Add file `Message.tsx` to folder `components`.
+3. **Write Component**: Create the function. Export the function as a default object to be used in other modules.
+4. **Use in App (App.tsx).** Clear all the code in `App.tsx`. Import your message function component. Display the message using a function. Export.
+5. **Check your webpage to see your app!** If you don't have it open already, run `npm run dev` and copy the localhost address in a browser.
 
 ---
 
@@ -77,12 +78,6 @@ This terminal will be used for our commands.
 3. **Delete `index.css`**: `index.css` has all the global styles for our app. Delete the `index.css` file.
 4. **Update `main.tsx`**: In `main.tsx`, replace `import './index.css'` with `import 'bootstrap/dist/css/bootstrap.css'`.
 5. **Check your webpage to see your app with new font and formatting!**
-
----
-
-## Organized Folder Structure
-
-It's convention to have all our components (eg `ListGroup.tsx`) in a dedicated folder within the `src` folder called **`components`**.
 
 ---
 
