@@ -1,17 +1,20 @@
-import Message from './components/Message'
+import Message from "./components/Message";
+import ListGroup from "./components/ListGroup";
 
 // App.tsx contains all the components.
-// It currently only has one component: the Message component.
 // Everything in our app goes here or gets connected through here.
 
 function App() {
-  return <div><Message /></div> // shorthand for <div><Message></Message></div>
+  let itemlist = ["pencil", "bottle", "lightbulb"];
+  return (
+    <div>
+      <ListGroup items={itemlist} heading="Objects" />
+    </div>
+  ); // shorthand for <div><ListGroup></ListGroup></div>
 }
 
-// Exporting functions from this module allows us to use and access it from another file
 export default App;
 
 /* HMR (seen in terminal)
-Automatically updates our app when we save code changes.
-Appears when file is saved.
+Automatically updates our app when we save code changes. Appears when file is saved.
 */
