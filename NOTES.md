@@ -13,7 +13,8 @@ Mia Striebeck
 
 4. **Navigate to Project Folder**: `cd react-app`.
 5. **Install all third-party libraries**: `npm i`.
-6. **Open in VSCode** (if not open already): `code .` or drag folder into VSCode.
+6. **Open in VSCode**: `code .` (or drag folder into VSCode) to open only this project's folder, not the full parent folder.
+
 7. **Open VSCode's Terminal** (if not open already): ``Ctrl + ` `` or click Terminal in the Menu Bar.
 8. **Start Web Server**: `npm run dev`.
 9. **Open Web Server in Browser**: Copy the localhost address (eg `https://localhost:XXXX/`) and paste it in your browser.
@@ -200,3 +201,4 @@ return (
 3. `Cmd + Shift + P`: Open Command Palette.
 4. `Cmd + D`: Add multiple cursors to matching texts.
 5. `Ctrl + Shift + F`: Wrap with Fragment (custom simple syntax shortcut)
+6. `Cmd + Shift + V`: View Markdown Preview Panel
