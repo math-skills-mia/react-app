@@ -8,15 +8,15 @@ Mia Striebeck
 2. **Create Project**: Run `npm create vite@latest`. (I'm using `create vite@4.1.0`).
 3. **Follow Prompts**:
    - Type project name (eg `react-app`).
-   - Use arrow keys to select `React` as framework.
+   - Select `React` as framework.
    - Select variant (`TypeScript` or `JavaScript`). I'm using TypeScript.
 
 4. **Navigate to Project Folder**: `cd react-app`.
 5. **Install all third-party libraries**: `npm i`.
-6. **Open in VSCode**: `code .` (or drag folder into VSCode) to open only this project's folder, not the full parent folder.
+6. **Open in VSCode**: Type `code .` in terminal (or drag folder into VSCode) to open only this project's folder, not the full parent folder.
 
 7. **Open VSCode's Terminal** (if not open already): ``Ctrl + ` `` or click Terminal in the Menu Bar.
-8. **Start Web Server**: `npm run dev`.
+8. **Start Development Web Server**: `npm run dev`.
 9. **Open Web Server in Browser**: Copy the localhost address (eg `https://localhost:XXXX/`) and paste it in your browser.
 
 ---
