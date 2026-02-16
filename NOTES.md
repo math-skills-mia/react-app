@@ -5,19 +5,19 @@ Mia Striebeck
 ## Create a New App with Vite
 
 1. **Open Terminal**: Use system terminal or VSCode's terminal (``Ctrl + ` ``).
-2. **Create Project**: Run `npm create vite@latest`. (I'm using `create vite@4.1.0`).
+2. **Create Project**: Run `npm create vite@latest`.
 3. **Follow Prompts**:
    - Type project name (eg `react-app`).
    - Select `React` as framework.
    - Select variant (`TypeScript` or `JavaScript`). I'm using TypeScript.
 
 4. **Navigate to Project Folder**: `cd react-app`.
-5. **Install all third-party libraries**: `npm i`.
+5. **Install all third-party libraries**: `npm i`. (Might be automatic)
 6. **Open in VSCode**: Type `code .` in terminal (or drag folder into VSCode) to open only this project's folder, not the full parent folder.
 
 7. **Open VSCode's Terminal** (if not open already): ``Ctrl + ` `` or click Terminal in the Menu Bar.
-8. **Start Development Web Server**: `npm run dev`.
-9. **Open Web Server in Browser**: Copy the localhost address (eg `https://localhost:XXXX/`) and paste it in your browser.
+8. **Start Development/Web Server**: `npm run dev`.
+9. **Open Web Server in Browser**: Copy the localhost address (eg `https://localhost:XXXX/`) and paste it into your browser.
 
 ---
 
@@ -36,7 +36,7 @@ After running `npm run dev`, leave this terminal open.
 
 This terminal will be used for our commands.
 
-- **Open Second Terminal**: Click the `+` icon in the top right corner of the internal terminal pane.
+- **Open a Second Terminal**: Click the `+` icon in the top right corner of the internal terminal pane.
 - **Navigate to your app**: `cd react-app`.
 - Run your commands here to begin building your app!
 
@@ -63,7 +63,7 @@ This terminal will be used for our commands.
 
 1. **Create `components` Folder**: It's convention to have all our components in a dedicated folder called `components`. Add folder `components` to the `src` folder.
 2. **Create Component File**: Let's create our first component file called `Message.tsx`! Add file `Message.tsx` to folder `components`.
-3. **Write Component Code**. Eg:
+3. **Write Component Code**. Type `rfce` (VSCode ES7+ shortcut) and get the following:
 
 ```
 function Message() {
@@ -72,8 +72,6 @@ function Message() {
 
 export default Message;
 ```
-
-Create the function. Export the function as a default object to be used in other modules.
 
 4. **Use in App (App.tsx).** Clear all the code in `App.tsx`.
 
@@ -87,19 +85,52 @@ function App() {
 export default App;
 ```
 
-Import your message function component. Display the message using a function. Export.
-
 5. **Check your webpage to see your app!** If you don't have it open already, run `npm run dev` and copy the localhost address in a browser.
 
 ---
 
-## Replace Default Styles with Bootstrap
+## Styling Your React + Vite App -- Replace Default Styles
 
-1. **Install Bootstrap**: Bootstrap is a popular CSS library with a bunch of CSS classes for styling our app. Run `npm install bootstrap`.
-2. **Clear `App.css`**: `App.css` contains Vite's inbuilt styles for our app components. We will not be needing them. Clear all the code in `App.css`.
-3. **Delete `index.css`**: `index.css` has all the global styles for our app. Delete the `index.css` file.
-4. **Update `main.tsx`**: In `main.tsx`, replace `import './index.css'` with `import 'bootstrap/dist/css/bootstrap.css'`.
-5. **Check your webpage to see your app with new font and formatting!**
+### CSS Library Option A: Bootstrap
+
+1. **Install Bootstrap**: Run `npm install bootstrap`.
+2. **Delete all CSS Files**: The CSS files `App.css` and `index.css` contain Vite's default styles. Delete `App.css` and `index.css`.
+3. **Update `main.tsx`**: In `main.tsx`, replace `import './index.css'` with `import 'bootstrap/dist/css/bootstrap.css'`.
+
+**Check your webpage to see your app with new font and formatting!**
+
+### CSS Library Option B: Tailwind CSS
+
+1. **Install Tailwind**: Run `npm install tailwindcss @tailwindcss/vite`.
+2. **Delete the CSS Files**: The CSS files `App.css` and `index.css` contain Vite's default styles. Delete `App.css` and `index.css`.
+
+3. **Create `styles.css` in `src`**. Import Tailwind CSS.
+
+```
+// In styles.css
+
+@import "tailwindcss";
+```
+
+4. **Update `vite.config.ts`**.
+
+```
+// In vite.config.ts
+
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite' //Add this
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react(), tailwindcss()], //Add this
+})
+
+```
+
+5. **Update `main.tsx`**: In `main.tsx`, replace `import './index.css'` with `import "./styles.css";`.
+
+**Check your webpage to see your app with new font and formatting!**
 
 ---
 
