@@ -225,7 +225,7 @@ return (
 
 ---
 
-## VS Code Shortcuts
+## VS Code Keyboard Shortcuts
 
 1. ``Ctrl + ` ``: Open internal terminal.
 2. `Cmd + P`: File Search.
@@ -233,3 +233,5 @@ return (
 4. `Cmd + D`: Add multiple cursors to matching texts.
 5. `Ctrl + Shift + F`: Wrap with Fragment (custom simple syntax shortcut)
 6. `Cmd + Shift + V`: View Markdown Preview Panel
+7. `Q`: Exit
+8. `Ctrl + C`: Stop a running terminal program
